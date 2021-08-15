@@ -59,7 +59,7 @@ db.message.createIndex({"chat_id": 1, "created_at": -1})
 ```js
 sh.shardCollection("trade.message", {"chat_id": 1, "created_at": -1})
 ```
-- Запустить экземпляр (экземпляры) сервиса диалогов trade-chat-app
+- Запустить экземпляр (экземпляры) сервиса диалогов trade-chat-app (https://github.com/orensimple/trade-chat-app)
 - Коллекция запросов для тестирования сервиса (https://github.com/orensimple/trade-chat-app/blob/main/trade-message.postman_collection.json)
 
 ## Resharding
