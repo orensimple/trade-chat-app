@@ -1,0 +1,263 @@
+{
+	"info": {
+		"_postman_id": "afb63e1a-6fb5-47d0-a4bd-1be09678c8f3",
+		"name": "trade-message",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Chat.Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "label",
+							"value": "new3",
+							"type": "text"
+						},
+						{
+							"key": "users",
+							"value": "d0bd8659-b89c-484d-8f51-0b3b863d9264",
+							"type": "text"
+						},
+						{
+							"key": "users",
+							"value": "9f6b2fed-04f5-4f89-bc4e-0d7a3b486ccd",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:80/api/chat",
+					"host": [
+						"localhost"
+					],
+					"port": "80",
+					"path": [
+						"api",
+						"chat"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Chat.Get",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "label",
+							"value": "new",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "admin",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:80/api/chat/61181bec4d104d6ffd0ec930",
+					"host": [
+						"localhost"
+					],
+					"port": "80",
+					"path": [
+						"api",
+						"chat",
+						"61181bec4d104d6ffd0ec930"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Chat.Search",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "label",
+							"value": "new",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "admin",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:80/api/chats/search?users=d0bd8659-b89c-484d-8f51-0b3b863d9265&users=9f6b2fed-04f5-4f89-bc4e-0d7a3b486ccd",
+					"host": [
+						"localhost"
+					],
+					"port": "80",
+					"path": [
+						"api",
+						"chats",
+						"search"
+					],
+					"query": [
+						{
+							"key": "users",
+							"value": "d0bd8659-b89c-484d-8f51-0b3b863d9265"
+						},
+						{
+							"key": "users",
+							"value": "9f6b2fed-04f5-4f89-bc4e-0d7a3b486ccd"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Message.Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "chat",
+							"value": "6118a96dc5bae1d242d15524",
+							"type": "text"
+						},
+						{
+							"key": "user",
+							"value": "d0bd8659-b89c-484d-8f51-0b3b863d9264",
+							"type": "text"
+						},
+						{
+							"key": "body",
+							"value": "super message",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:80/api/message",
+					"host": [
+						"localhost"
+					],
+					"port": "80",
+					"path": [
+						"api",
+						"message"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Message.Get",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "label",
+							"value": "new",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "admin",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:80/api/message/6119029c0daec65306c29087",
+					"host": [
+						"localhost"
+					],
+					"port": "80",
+					"path": [
+						"api",
+						"message",
+						"6119029c0daec65306c29087"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Message.Search",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "label",
+							"value": "new",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "admin",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:80/api/messages/search?user=d0bd8659-b89c-484d-8f51-0b3b863d9265&chat=611904cde90c415073232a7b",
+					"host": [
+						"localhost"
+					],
+					"port": "80",
+					"path": [
+						"api",
+						"messages",
+						"search"
+					],
+					"query": [
+						{
+							"key": "user",
+							"value": "d0bd8659-b89c-484d-8f51-0b3b863d9265"
+						},
+						{
+							"key": "chat",
+							"value": "611904cde90c415073232a7b"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
