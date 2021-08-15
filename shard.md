@@ -68,8 +68,8 @@ sh.shardCollection("trade.message", {"chat_id": 1, "created_at": -1})
 (https://docs.mongodb.com/manual/core/sharding-balancer-administration/#sharding-balancing).
 
 Добавление шардов в кластер описано здесь:
-https://docs.mongodb.com/manual/tutorial/add-shards-to-shard-cluster/
+(https://docs.mongodb.com/manual/tutorial/add-shards-to-shard-cluster/)
 
 Процесс удаления шардов из кластера описан в документации здесь:
-https://docs.mongodb.com/manual/tutorial/remove-shards-from-cluster/
+(https://docs.mongodb.com/manual/tutorial/remove-shards-from-cluster/)
 ---
